@@ -8,6 +8,9 @@ let user = prompt('Podaj co wybierasz?');
 
 console.log('Użytkownik wybrał: ', user);
 console.log('Komputer wylosował: ', computer);
+if (user != computer.value){
+    console.log('Walidacja, złe słowo!!!');
+} else
 if (computer == user) {
     console.log('Wybrali to samo. Mamy remis!');
 } else if ((computer == 'nozyce') && (user == 'papier')){
