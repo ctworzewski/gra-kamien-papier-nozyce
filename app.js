@@ -13,6 +13,10 @@ if (computer == user) {
 } else if ((computer == 'nozyce') && (user == 'papier')){
     console.log('Wygrały nozyce');
     
-} else {
-    console.log('Wygrał papier');
+} else if ((computer == 'papier') && (user == 'kamien')) {
+    console.log('Wygrał', computer);
+} else if ((computer == 'kamien') && (user == 'nozyce')) {
+    console.log('Wygrały ', computer);
+} else if(user === '') {
+    alert('Wprowadź jakąś wartość!');
 }
